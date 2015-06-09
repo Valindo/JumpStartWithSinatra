@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title == @title || "Song by Sinatra"
+		link rel="stylesheet" href="/styles.css"
+	body
+		header
+			h1 Song by Sinatra
+			== slim :nav
+		section
+			==yield
